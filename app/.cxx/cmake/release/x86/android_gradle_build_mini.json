@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:/Ninja/ninja.exe",
+      "-C",
+      "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "ninja.exe",
+    "-C",
+    "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-plasma::@6890427a1f51a3e7e1df": {
+      "artifactName": "native-plasma",
+      "abi": "x86",
+      "output": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\build\\intermediates\\cmake\\release\\obj\\x86\\libnative-plasma.so",
+      "runtimeFiles": []
+    },
+    "native_app_glue::@6890427a1f51a3e7e1df": {
+      "artifactName": "native_app_glue",
+      "abi": "x86",
+      "output": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\x86\\libnative_app_glue.a",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,4 @@
+C:/Users/J/Desktop/Code/sand/imgui/app/.cxx/cmake/debug/x86_64/CMakeFiles/native_app_glue.dir
+C:/Users/J/Desktop/Code/sand/imgui/app/.cxx/cmake/debug/x86_64/CMakeFiles/native-plasma.dir
+C:/Users/J/Desktop/Code/sand/imgui/app/.cxx/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/J/Desktop/Code/sand/imgui/app/.cxx/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir

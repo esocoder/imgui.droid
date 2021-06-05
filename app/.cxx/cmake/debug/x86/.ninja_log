@@ -1,0 +1,24 @@
+# ninja log v5
+1	25	0	clean	6dd091519ded1980
+4	1868	6445653303033493	CMakeFiles/native_app_glue.dir/C_/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/sources/android/native_app_glue/android_native_app_glue.c.o	cdf1c5869358ff9b
+1742	6149	6445653346764488	CMakeFiles/native-plasma.dir/imgui/imgui_draw.cpp.o	c372f187d284d75
+9	1741	6445653301972750	CMakeFiles/native-plasma.dir/main.cpp.o	7c8cf53765794fd
+1868	2162	6445653305585293	libnative_app_glue.a	afc7274b531aee4f
+7	3437	6445653318464425	CMakeFiles/native-plasma.dir/imgui/imgui_demo.cpp.o	33d4198a37e8923e
+2163	5395	6445653339179119	CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_android.cpp.o	eec3968407aa3ab9
+3438	4105	6445653326079830	CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_opengl3.cpp.o	717e7bcb94dec07b
+15	4090	6445653325739589	CMakeFiles/native-plasma.dir/imgui/imgui_tables.cpp.o	cd905ec44c2b568f
+6149	6669	6445653351633395	C:/Users/J/Desktop/Code/sand/imgui/app/build/intermediates/cmake/debug/obj/x86/libnative-plasma.so	11cbbd11f01108af
+20	5875	6445653343972504	CMakeFiles/native-plasma.dir/imgui/imgui_widgets.cpp.o	ca9d23f0a0d3886f
+12	5960	6445653344853137	CMakeFiles/native-plasma.dir/imgui/imgui.cpp.o	4719cbeefa374fce
+22	895	6445655682935106	CMakeFiles/native.dir/imgui/backends/imgui_impl_opengl3.cpp.o	dfb5ca8c1269877b
+11	900	6445655683535532	CMakeFiles/native.dir/main.cpp.o	c567ff9c184d340d
+13	3182	6445655705771304	CMakeFiles/native.dir/imgui/imgui_demo.cpp.o	ea88da266b0075b4
+900	5934	6445655733921250	CMakeFiles/native.dir/imgui/imgui_widgets.cpp.o	88b6a7a57a4e6f2c
+19	4403	6445655718270171	CMakeFiles/native.dir/imgui/imgui_tables.cpp.o	70cc3377199fcb62
+9	5782	6445655732410221	CMakeFiles/native.dir/imgui/imgui.cpp.o	8b22b584d8544ce7
+896	4448	6445655718670455	CMakeFiles/native.dir/imgui/backends/imgui_impl_android.cpp.o	bb14548f1bd90c3a
+15	5207	6445655726646096	CMakeFiles/native.dir/imgui/imgui_draw.cpp.o	738f19616d5d8e61
+5934	6117	6445655735572449	C:/Users/J/Desktop/Code/sand/imgui/app/build/intermediates/cmake/debug/obj/x86/libnative.so	466c6802fbe6a12a
+22	3413	6445708108485353	C:/Users/J/Desktop/Code/sand/imgui/app/build/intermediates/cmake/debug/obj/x86/libnative-plasma.so	11cbbd11f01108af
+1	19	0	clean	6dd091519ded1980

@@ -1,0 +1,46 @@
+{
+  "buildFiles": [
+    "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:/Ninja/ninja.exe",
+      "-C",
+      "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "ninja.exe",
+    "-C",
+    "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86_64",
+      "artifactName": "native",
+      "output": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\build\\intermediates\\cmake\\debug\\obj\\x86_64\\libnative.so",
+      "runtimeFiles": []
+    },
+    "native_app_glue::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86_64",
+      "artifactName": "native_app_glue",
+      "output": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\x86_64\\libnative_app_glue.a"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

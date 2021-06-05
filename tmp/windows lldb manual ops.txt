@@ -1,0 +1,71 @@
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>adb root
+adbd is already running as root
+
+C:\WINDOWS\system32>adb shell
+generic_x86_arm:/ # exit
+
+C:\WINDOWS\system32>cd C:\Users\J\AppData\Local\Android\Sdk\ndk\23.0.7123448\toolchains\llvm\prebuilt\windows-x86_64\bin
+
+C:\Users\J\AppData\Local\Android\Sdk\ndk\23.0.7123448\toolchains\llvm\prebuilt\windows-x86_64\bin>lldb
+(lldb) platform connect://emulator-5554:9090
+←[0;1;31merror: ←[0munknown command shorthand suffix: '://emulator-5554:9090'
+(lldb) platform connect connect://emulator-5554:9090
+←[0;1;31merror: ←[0mcan't connect to the host platform 'host', always connected
+(lldb) platform connect connect://emulator-5554:9090
+←[0;1;31merror: ←[0mcan't connect to the host platform 'host', always connected
+(lldb) platform select remote-android
+  Platform: remote-android
+ Connected: no
+(lldb) platform connect connect://emulator-5554:9090
+  Platform: remote-android
+    Triple: arm-unknown-linux-android
+OS Version: 30 (5.4.61-android11-0-00791-gbad091cc4bf3-ab6833933)
+  Hostname: localhost
+ Connected: yes
+WorkingDir: /data/data/com.example.native_plasma
+    Kernel: #1 SMP PREEMPT 2020-09-14 14:42:20
+(lldb) attach 8400
+←[0;1;31merror: ←[0mattach failed: Operation not permitted
+(lldb) platform select remote-android
+  Platform: remote-android
+ Connected: no
+(lldb) platform connect://localhost:9090
+←[0;1;31merror: ←[0munknown command shorthand suffix: '://localhost:9090'
+(lldb) platform connect connect://localhost:9090
+  Platform: remote-android
+    Triple: arm-unknown-linux-android
+OS Version: 30 (5.4.61-android11-0-00791-gbad091cc4bf3-ab6833933)
+  Hostname: localhost
+ Connected: yes
+WorkingDir: /data/data/com.example.native_plasma
+    Kernel: #1 SMP PREEMPT 2020-09-14 14:42:20
+(lldb) attach 8400
+←[0;1;31merror: ←[0mattach failed: Operation not permitted
+(lldb) platform select remote-android
+  Platform: remote-android
+ Connected: no
+(lldb) platform connect connect://emulator-5554:9090
+  Platform: remote-android
+    Triple: arm-unknown-linux-android
+OS Version: 30 (5.4.61-android11-0-00791-gbad091cc4bf3-ab6833933)
+  Hostname: localhost
+ Connected: yes
+WorkingDir: /data/local/tmp
+    Kernel: #1 SMP PREEMPT 2020-09-14 14:42:20
+(lldb) attach 8400
+←[0;1;31merror: ←[0mattach failed: Operation not permitted
+(lldb) platform select remote-android
+  Platform: remote-android
+ Connected: no
+(lldb) platform connect connect://emulator-5554:9090
+  Platform: remote-android
+    Triple: arm-unknown-linux-android
+OS Version: 30 (5.4.61-android11-0-00791-gbad091cc4bf3-ab6833933)
+  Hostname: localhost
+ Connected: yes
+WorkingDir: /data/data/com.example.native_plasma
+    Kernel: #1 SMP PREEMPT 2020-09-14 14:42:20
+(lldb)

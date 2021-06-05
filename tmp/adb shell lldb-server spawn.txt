@@ -1,0 +1,587 @@
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>cd %ANDROID_HOME%/platform-tools
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb start-server
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb devices
+List of devices attached
+emulator-5554   device
+
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb shell
+generic_x86_arm:/ # cd data/local/tmp
+generic_x86_arm:/data/local/tmp # ls
+lldb-server
+generic_x86_arm:/data/local/tmp # ./lldb-server platform --listen
+./lldb-server: option `--listen' requires an argument
+Usage:
+  ./lldb-server platform [--log-file log-file-name] [--log-channels log-channel-list] [--port-file port-file-path] --server --listen port
+generic_x86_arm:/data/local/tmp # ./lldb-server platform --listen "*:9090" --server
+Connection established.
+error: lost connection
+lldb-server exiting...
+
+^C
+130|generic_x86_arm:/data/local/tmp # ps
+USER            PID   PPID     VSZ    RSS WCHAN            ADDR S NAME
+root           8065   7350   12916   3096 __ia32_co+          0 S sh
+root           8078   8065   12584   3748 0                   0 R ps
+generic_x86_arm:/data/local/tmp # ps | grep com.example.native_plasma
+1|generic_x86_arm:/data/local/tmp # ps
+USER            PID   PPID     VSZ    RSS WCHAN            ADDR S NAME
+root           8065   7350   12916   3096 __ia32_co+          0 S sh
+root           8083   8065   12584   3712 0                   0 R ps
+generic_x86_arm:/data/local/tmp # pidof com.example.native_plasma
+8010
+generic_x86_arm:/data/local/tmp # ./lldb-server platform --listen "*:9090" --server
+Connection established.
+error: lost connection
+lldb-server exiting...
+^C
+130|generic_x86_arm:/data/local/tmp # pidof com.example.native_plasma
+8010
+generic_x86_arm:/data/local/tmp # ./lldb-server platform --listen "*:9090" --server
+Connection established.
+error: lost connection
+lldb-server exiting...
+
+^C
+130|generic_x86_arm:/data/local/tmp # main proc
+/system/bin/sh: main: inaccessible or not found
+127|generic_x86_arm:/data/local/tmp # cd /proc/8010
+generic_x86_arm:/proc/8010 # dir
+/system/bin/sh: dir: inaccessible or not found
+127|generic_x86_arm:/proc/8010 # ls
+arch_status  auxv    clear_refs  comm             cpuset  environ  fd      io      loginuid   maps  mountinfo  mountstats  ns       oom_score      pagemap      root   schedstat  smaps         stack  statm   syscall  time_in_state  wchan
+attr         cgroup  cmdline     coredump_filter  cwd     exe      fdinfo  limits  map_files  mem   mounts     net         oom_adj  oom_score_adj  personality  sched  sessionid  smaps_rollup  stat   status  task     timerslack_ns
+generic_x86_arm:/proc/8010 # ls -la
+total 0
+dr-xr-xr-x   9 u0_a153 u0_a153 0 2021-05-26 20:05 .
+dr-xr-xr-x 250 root    root    0 2021-05-26 15:14 ..
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 arch_status
+dr-xr-xr-x   2 u0_a153 u0_a153 0 2021-05-26 20:33 attr
+-r--------   1 u0_a153 u0_a153 0 2021-05-26 20:33 auxv
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:05 cgroup
+--w-------   1 u0_a153 u0_a153 0 2021-05-26 20:33 clear_refs
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:05 cmdline
+-rw-r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:05 comm
+-rw-r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 coredump_filter
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 cpuset
+lrwxrwxrwx   1 u0_a153 u0_a153 0 2021-05-26 20:33 cwd -> /
+-r--------   1 u0_a153 u0_a153 0 2021-05-26 20:23 environ
+lrwxrwxrwx   1 u0_a153 u0_a153 0 2021-05-26 20:06 exe -> /system/bin/app_process32
+dr-x------   2 u0_a153 u0_a153 0 2021-05-26 20:05 fd
+dr-x------   2 u0_a153 u0_a153 0 2021-05-26 20:33 fdinfo
+-r--------   1 u0_a153 u0_a153 0 2021-05-26 20:33 io
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 limits
+-rw-r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 loginuid
+dr-x------   2 u0_a153 u0_a153 0 2021-05-26 20:33 map_files
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 maps
+-rw-------   1 u0_a153 u0_a153 0 2021-05-26 20:33 mem
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 mountinfo
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 mounts
+-r--------   1 u0_a153 u0_a153 0 2021-05-26 20:33 mountstats
+dr-xr-xr-x   8 u0_a153 u0_a153 0 2021-05-26 20:33 net
+dr-x--x--x   2 u0_a153 u0_a153 0 2021-05-26 20:33 ns
+-rw-r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 oom_adj
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 oom_score
+-rw-r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:05 oom_score_adj
+-r--------   1 u0_a153 u0_a153 0 2021-05-26 20:33 pagemap
+-r--------   1 u0_a153 u0_a153 0 2021-05-26 20:33 personality
+lrwxrwxrwx   1 u0_a153 u0_a153 0 2021-05-26 20:33 root -> /
+-rw-r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:06 sched
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 schedstat
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 sessionid
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 smaps
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:05 smaps_rollup
+-r--------   1 u0_a153 u0_a153 0 2021-05-26 20:06 stack
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:05 stat
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 statm
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:05 status
+-r--------   1 u0_a153 u0_a153 0 2021-05-26 20:33 syscall
+dr-xr-xr-x  19 u0_a153 u0_a153 0 2021-05-26 20:05 task
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 time_in_state
+-rw-rw-rw-   1 u0_a153 u0_a153 0 2021-05-26 20:05 timerslack_ns
+-r--r--r--   1 u0_a153 u0_a153 0 2021-05-26 20:33 wchan
+generic_x86_arm:/proc/8010 # cd cmdline
+/system/bin/sh: cd: /proc/8010/cmdline: Not a directory
+2|generic_x86_arm:/proc/8010 # cd cmdline
+/system/bin/sh: cd: /proc/8010/cmdline: Not a directory
+2|generic_x86_arm:/proc/8010 # ps -p -o 8010
+ps: bad -p '-o'
+            ^
+1|generic_x86_arm:/proc/8010 # ps -p 8010
+USER            PID   PPID     VSZ    RSS WCHAN            ADDR S NAME
+u0_a153        8010    276 1271348 111508 do_epoll_+          0 S com.example.native_plasma
+generic_x86_arm:/proc/8010 # cd data/local/tmp
+/system/bin/sh: cd: /proc/8010/data/local/tmp: No such file or directory
+2|generic_x86_arm:/proc/8010 # cd /data/local/tmp
+generic_x86_arm:/data/local/tmp # ./lldb-server platform --listen "*:9090" --server
+Connection established.
+error: lost connection
+lldb-server exiting...
+Connection established.
+error: lost connection
+lldb-server exiting...
+Connection established.
+error: lost connection
+lldb-server exiting...
+Killed
+137|generic_x86_arm:/data/local/tmp # ./lldb-server platform --listen "*:9090" --server
+Connection established.
+^C
+130|generic_x86_arm:/data/local/tmp # cd /data
+generic_x86_arm:/data # cd data
+generic_x86_arm:/data/data # ls
+android                                                        com.android.internal.systemui.navbar.gestural_narrow_back     com.android.service.ims.presence                       com.android.theme.icon_pack.filled.themepicker                      com.google.android.googlequicksearchbox
+android.auto_generated_rro_product__                           com.android.internal.systemui.navbar.gestural_wide_back       com.android.settings                                   com.android.theme.icon_pack.rounded.android                         com.google.android.gsf
+com.android.backupconfirm                                      com.android.internal.systemui.navbar.threebutton              com.android.settings.auto_generated_rro_product__      com.android.theme.icon_pack.rounded.launcher                        com.google.android.hotspot2.osulogin
+com.android.bips                                               com.android.internal.systemui.navbar.twobutton                com.android.settings.intelligence                      com.android.theme.icon_pack.rounded.settings                        com.google.android.ims
+com.android.bips.auto_generated_rro_product__                  com.android.keychain                                          com.android.sharedstoragebackup                        com.android.theme.icon_pack.rounded.systemui                        com.google.android.inputmethod.latin
+com.android.bluetooth                                          com.android.localtransport                                    com.android.shell                                      com.android.theme.icon_pack.rounded.themepicker                     com.google.android.markup
+com.android.bluetoothmidiservice                               com.android.location.fused                                    com.android.simappdialog                               com.android.timezone.updater                                        com.google.android.modulemetadata
+com.android.bookmarkprovider                                   com.android.managedprovisioning                               com.android.simappdialog.auto_generated_rro_product__  com.android.traceur                                                 com.google.android.networkstack
+com.android.calllogbackup                                      com.android.managedprovisioning.auto_generated_rro_product__  com.android.soundpicker                                com.android.vending                                                 com.google.android.networkstack.permissionconfig
+com.android.camera2                                            com.android.mms.service                                       com.android.statementservice                           com.android.vpndialogs                                              com.google.android.networkstack.tethering
+com.android.carrierconfig                                      com.android.mtp                                               com.android.stk                                        com.android.wallpaper.livepicker                                    com.google.android.networkstack.tethering.emulator
+com.android.carrierconfig.auto_generated_rro_product__         com.android.musicfx                                           com.android.storagemanager                             com.android.wallpaperbackup                                         com.google.android.onetimeinitializer
+com.android.carrierdefaultapp                                  com.android.nfc                                               com.android.systemui                                   com.breel.wallpapers18                                              com.google.android.overlay.emulatorconfig
+com.android.cellbroadcastreceiver                              com.android.nfc.auto_generated_rro_product__                  com.android.systemui.auto_generated_rro_product__      com.example.native_plasma                                           com.google.android.overlay.googleconfig
+com.android.certinstaller                                      com.android.ons                                               com.android.systemui.plugin.globalactions.wallet       com.google.android.apps.docs                                        com.google.android.overlay.googlewebview
+com.android.chrome                                             com.android.pacprocessor                                      com.android.theme.color.black                          com.google.android.apps.maps                                        com.google.android.overlay.permissioncontroller
+com.android.companiondevicemanager                             com.android.phone                                             com.android.theme.color.cinnamon                       com.google.android.apps.messaging                                   com.google.android.overlay.pixelconfigcommon
+com.android.contacts                                           com.android.phone.auto_generated_rro_product__                com.android.theme.color.green                          com.google.android.apps.nexuslauncher                               com.google.android.packageinstaller
+com.android.cts.ctsshim                                        com.android.printspooler                                      com.android.theme.color.ocean                          com.google.android.apps.nexuslauncher.auto_generated_rro_product__  com.google.android.partnersetup
+com.android.cts.priv.ctsshim                                   com.android.providers.blockednumber                           com.android.theme.color.orchid                         com.google.android.apps.photos                                      com.google.android.permissioncontroller
+com.android.dialer                                             com.android.providers.calendar                                com.android.theme.color.purple                         com.google.android.apps.pixelmigrate                                com.google.android.printservice.recommendation
+com.android.dreams.basic                                       com.android.providers.contacts                                com.android.theme.color.space                          com.google.android.apps.restore                                     com.google.android.projection.gearhead
+com.android.dynsystem                                          com.android.providers.contacts.auto_generated_rro_product__   com.android.theme.font.notoserifsource                 com.google.android.apps.wallpaper                                   com.google.android.providers.media.module
+com.android.egg                                                com.android.providers.downloads                               com.android.theme.icon.pebble                          com.google.android.apps.wallpaper.nexus                             com.google.android.sdksetup
+com.android.emergency                                          com.android.providers.downloads.ui                            com.android.theme.icon.roundedrect                     com.google.android.apps.wellbeing                                   com.google.android.setupwizard
+com.android.emulator.multidisplay                              com.android.providers.media                                   com.android.theme.icon.squircle                        com.google.android.apps.youtube.music                               com.google.android.soundpicker
+com.android.emulator.radio.config                              com.android.providers.partnerbookmarks                        com.android.theme.icon.taperedrect                     com.google.android.calendar                                         com.google.android.syncadapters.contacts
+com.android.externalstorage                                    com.android.providers.settings                                com.android.theme.icon.teardrop                        com.google.android.captiveportallogin                               com.google.android.tag
+com.android.htmlviewer                                         com.android.providers.settings.auto_generated_rro_product__   com.android.theme.icon.vessel                          com.google.android.cellbroadcastreceiver                            com.google.android.trichromelibrary_410410681
+com.android.inputdevices                                       com.android.providers.telephony                               com.android.theme.icon_pack.circular.android           com.google.android.cellbroadcastservice                             com.google.android.tts
+com.android.internal.display.cutout.emulation.corner           com.android.providers.telephony.auto_generated_rro_product__  com.android.theme.icon_pack.circular.launcher          com.google.android.configupdater                                    com.google.android.videos
+com.android.internal.display.cutout.emulation.double           com.android.providers.userdictionary                          com.android.theme.icon_pack.circular.settings          com.google.android.deskclock                                        com.google.android.webview
+com.android.internal.display.cutout.emulation.emu01            com.android.proxyhandler                                      com.android.theme.icon_pack.circular.systemui          com.google.android.documentsui                                      com.google.android.wifi.resources
+com.android.internal.display.cutout.emulation.hole             com.android.safetyregulatoryinfo                              com.android.theme.icon_pack.circular.themepicker       com.google.android.ext.services                                     com.google.android.youtube
+com.android.internal.display.cutout.emulation.tall             com.android.se                                                com.android.theme.icon_pack.filled.android             com.google.android.ext.shared                                       com.google.mainline.telemetry
+com.android.internal.display.cutout.emulation.waterfall        com.android.server.telecom                                    com.android.theme.icon_pack.filled.launcher            com.google.android.feedback                                         org.chromium.webview_shell
+com.android.internal.systemui.navbar.gestural                  com.android.server.telecom.auto_generated_rro_product__       com.android.theme.icon_pack.filled.settings            com.google.android.gm
+com.android.internal.systemui.navbar.gestural_extra_wide_back  com.android.service.ims                                       com.android.theme.icon_pack.filled.systemui            com.google.android.gms
+generic_x86_arm:/data/data # cd com.example.native-plasma
+/system/bin/sh: cd: /data/data/com.example.native-plasma: No such file or directory
+2|generic_x86_arm:/data/data # ls -la
+total 1528
+drwxrwx--x 190 system         system         12288 2021-05-26 20:03 .
+drwxrwx--x  47 system         system          4096 2021-05-26 15:17 ..
+drwx------   4 system         system          4096 2021-05-26 15:17 android
+drwx------   4 u0_a57         u0_a57          4096 2021-05-26 15:17 android.auto_generated_rro_product__
+drwx------   4 u0_a72         u0_a72          4096 2021-05-26 15:17 com.android.backupconfirm
+drwx------   4 u0_a62         u0_a62          4096 2021-05-26 15:17 com.android.bips
+drwx------   4 u0_a48         u0_a48          4096 2021-05-26 15:17 com.android.bips.auto_generated_rro_product__
+drwx------   4 bluetooth      bluetooth       4096 2021-05-26 15:17 com.android.bluetooth
+drwx------   4 u0_a82         u0_a82          4096 2021-05-26 15:17 com.android.bluetoothmidiservice
+drwx------   4 u0_a90         u0_a90          4096 2021-05-26 15:17 com.android.bookmarkprovider
+drwx------   4 u0_a65         u0_a65          4096 2021-05-26 15:17 com.android.calllogbackup
+drwx------   5 u0_a125        u0_a125         4096 2021-05-26 15:21 com.android.camera2
+drwx------   4 u0_a134        u0_a134         4096 2021-05-26 15:17 com.android.carrierconfig
+drwx------   4 u0_a33         u0_a33          4096 2021-05-26 15:17 com.android.carrierconfig.auto_generated_rro_product__
+drwx------   4 u0_a85         u0_a85          4096 2021-05-26 15:17 com.android.carrierdefaultapp
+drwx------   4 u0_a67         u0_a67          4096 2021-05-26 15:17 com.android.cellbroadcastreceiver
+drwx------   4 u0_a79         u0_a79          4096 2021-05-26 15:17 com.android.certinstaller
+drwx------   8 u0_a120        u0_a120         4096 2021-05-26 15:22 com.android.chrome
+drwx------   4 u0_a83         u0_a83          4096 2021-05-26 15:17 com.android.companiondevicemanager
+drwx------   5 u0_a107        u0_a107         4096 2021-05-26 15:21 com.android.contacts
+drwx------   4 u0_a148        u0_a148         4096 2021-05-26 15:17 com.android.cts.ctsshim
+drwx------   4 u0_a147        u0_a147         4096 2021-05-26 15:17 com.android.cts.priv.ctsshim
+drwx------   7 u0_a100        u0_a100         4096 2021-05-26 15:18 com.android.dialer
+drwx------   4 u0_a78         u0_a78          4096 2021-05-26 15:17 com.android.dreams.basic
+drwx------   4 system         system          4096 2021-05-26 15:17 com.android.dynsystem
+drwx------   4 u0_a93         u0_a93          4096 2021-05-26 15:17 com.android.egg
+drwx------   4 u0_a144        u0_a144         4096 2021-05-26 15:17 com.android.emergency
+drwx------   4 system         system          4096 2021-05-26 15:17 com.android.emulator.multidisplay
+drwx------   4 u0_a139        u0_a139         4096 2021-05-26 15:17 com.android.emulator.radio.config
+drwx------   4 u0_a70         u0_a70          4096 2021-05-26 15:17 com.android.externalstorage
+drwx------   4 u0_a84         u0_a84          4096 2021-05-26 15:17 com.android.htmlviewer
+drwx------   4 system         system          4096 2021-05-26 15:17 com.android.inputdevices
+drwx------   4 u0_a45         u0_a45          4096 2021-05-26 15:17 com.android.internal.display.cutout.emulation.corner
+drwx------   4 u0_a49         u0_a49          4096 2021-05-26 15:17 com.android.internal.display.cutout.emulation.double
+drwx------   4 u0_a51         u0_a51          4096 2021-05-26 15:17 com.android.internal.display.cutout.emulation.emu01
+drwx------   4 u0_a5          u0_a5           4096 2021-05-26 15:17 com.android.internal.display.cutout.emulation.hole
+drwx------   4 u0_a13         u0_a13          4096 2021-05-26 15:17 com.android.internal.display.cutout.emulation.tall
+drwx------   4 u0_a38         u0_a38          4096 2021-05-26 15:17 com.android.internal.display.cutout.emulation.waterfall
+drwx------   4 u0_a12         u0_a12          4096 2021-05-26 15:17 com.android.internal.systemui.navbar.gestural
+drwx------   4 u0_a44         u0_a44          4096 2021-05-26 15:17 com.android.internal.systemui.navbar.gestural_extra_wide_back
+drwx------   4 u0_a52         u0_a52          4096 2021-05-26 15:17 com.android.internal.systemui.navbar.gestural_narrow_back
+drwx------   4 u0_a46         u0_a46          4096 2021-05-26 15:17 com.android.internal.systemui.navbar.gestural_wide_back
+drwx------   4 u0_a7          u0_a7           4096 2021-05-26 15:17 com.android.internal.systemui.navbar.threebutton
+drwx------   4 u0_a37         u0_a37          4096 2021-05-26 15:17 com.android.internal.systemui.navbar.twobutton
+drwx------   4 system         system          4096 2021-05-26 15:17 com.android.keychain
+drwx------   5 system         system          4096 2021-05-26 15:18 com.android.localtransport
+drwx------   4 system         system          4096 2021-05-26 15:17 com.android.location.fused
+drwx------   6 u0_a76         u0_a76          4096 2021-05-26 15:18 com.android.managedprovisioning
+drwx------   4 u0_a41         u0_a41          4096 2021-05-26 15:17 com.android.managedprovisioning.auto_generated_rro_product__
+drwx------   4 radio          radio           4096 2021-05-26 15:17 com.android.mms.service
+drwx------   5 u0_a61         u0_a61          4096 2021-05-26 15:17 com.android.mtp
+drwx------   4 u0_a71         u0_a71          4096 2021-05-26 15:17 com.android.musicfx
+drwx------   4 nfc            nfc             4096 2021-05-26 15:17 com.android.nfc
+drwx------   4 u0_a54         u0_a54          4096 2021-05-26 15:17 com.android.nfc.auto_generated_rro_product__
+drwx------   4 radio          radio           4096 2021-05-26 15:17 com.android.ons
+drwx------   4 u0_a92         u0_a92          4096 2021-05-26 15:17 com.android.pacprocessor
+drwx------   5 radio          radio           4096 2021-05-26 15:17 com.android.phone
+drwx------   4 u0_a39         u0_a39          4096 2021-05-26 15:17 com.android.phone.auto_generated_rro_product__
+drwx------   6 u0_a86         u0_a86          4096 2021-05-26 15:17 com.android.printspooler
+drwx------   4 u0_a65         u0_a65          4096 2021-05-26 15:17 com.android.providers.blockednumber
+drwx------   6 u0_a68         u0_a68          4096 2021-05-26 15:18 com.android.providers.calendar
+drwx------   7 u0_a65         u0_a65          4096 2021-05-26 15:17 com.android.providers.contacts
+drwx------   4 u0_a31         u0_a31          4096 2021-05-26 15:17 com.android.providers.contacts.auto_generated_rro_product__
+drwx------   6 u0_a61         u0_a61          4096 2021-05-26 15:19 com.android.providers.downloads
+drwx------   4 u0_a61         u0_a61          4096 2021-05-26 15:17 com.android.providers.downloads.ui
+drwx------   6 u0_a61         u0_a61          4096 2021-05-26 15:18 com.android.providers.media
+drwx------   4 u0_a80         u0_a80          4096 2021-05-26 15:17 com.android.providers.partnerbookmarks
+drwx------   4 system         system          4096 2021-05-26 15:17 com.android.providers.settings
+drwx------   4 u0_a32         u0_a32          4096 2021-05-26 15:17 com.android.providers.settings.auto_generated_rro_product__
+drwx------   6 radio          radio           4096 2021-05-26 15:18 com.android.providers.telephony
+drwx------   4 u0_a26         u0_a26          4096 2021-05-26 15:17 com.android.providers.telephony.auto_generated_rro_product__
+drwx------   5 u0_a65         u0_a65          4096 2021-05-26 15:19 com.android.providers.userdictionary
+drwx------   4 u0_a64         u0_a64          4096 2021-05-26 15:17 com.android.proxyhandler
+drwx------   4 u0_a87         u0_a87          4096 2021-05-26 15:17 com.android.safetyregulatoryinfo
+drwx------   4 secure_element secure_element  4096 2021-05-26 15:17 com.android.se
+drwx------   4 system         system          4096 2021-05-26 15:17 com.android.server.telecom
+drwx------   4 u0_a43         u0_a43          4096 2021-05-26 15:17 com.android.server.telecom.auto_generated_rro_product__
+drwx------   4 radio          radio           4096 2021-05-26 15:17 com.android.service.ims
+drwx------   5 radio          radio           4096 2021-05-26 15:17 com.android.service.ims.presence
+drwx------   4 system         system          4096 2021-05-26 15:17 com.android.settings
+drwx------   4 u0_a58         u0_a58          4096 2021-05-26 15:17 com.android.settings.auto_generated_rro_product__
+drwx------   5 u0_a98         u0_a98          4096 2021-05-26 15:19 com.android.settings.intelligence
+drwx------   4 u0_a73         u0_a73          4096 2021-05-26 15:17 com.android.sharedstoragebackup
+drwx------   5 shell          shell           4096 2021-05-26 15:21 com.android.shell
+drwx------   4 u0_a94         u0_a94          4096 2021-05-26 15:17 com.android.simappdialog
+drwx------   4 u0_a50         u0_a50          4096 2021-05-26 15:17 com.android.simappdialog.auto_generated_rro_product__
+drwx------   4 u0_a61         u0_a61          4096 2021-05-26 15:17 com.android.soundpicker
+drwx------   4 u0_a63         u0_a63          4096 2021-05-26 15:17 com.android.statementservice
+drwx------   4 radio          radio           4096 2021-05-26 15:17 com.android.stk
+drwx------   4 u0_a138        u0_a138         4096 2021-05-26 15:17 com.android.storagemanager
+drwx------   4 u0_a143        u0_a143         4096 2021-05-26 15:17 com.android.systemui
+drwx------   4 u0_a60         u0_a60          4096 2021-05-26 15:17 com.android.systemui.auto_generated_rro_product__
+drwx------   4 u0_a140        u0_a140         4096 2021-05-26 15:17 com.android.systemui.plugin.globalactions.wallet
+drwx------   4 u0_a16         u0_a16          4096 2021-05-26 15:17 com.android.theme.color.black
+drwx------   4 u0_a2          u0_a2           4096 2021-05-26 15:17 com.android.theme.color.cinnamon
+drwx------   4 u0_a53         u0_a53          4096 2021-05-26 15:17 com.android.theme.color.green
+drwx------   4 u0_a19         u0_a19          4096 2021-05-26 15:17 com.android.theme.color.ocean
+drwx------   4 u0_a14         u0_a14          4096 2021-05-26 15:17 com.android.theme.color.orchid
+drwx------   4 u0_a0          u0_a0           4096 2021-05-26 15:17 com.android.theme.color.purple
+drwx------   4 u0_a8          u0_a8           4096 2021-05-26 15:17 com.android.theme.color.space
+drwx------   4 u0_a3          u0_a3           4096 2021-05-26 15:17 com.android.theme.font.notoserifsource
+drwx------   4 u0_a18         u0_a18          4096 2021-05-26 15:17 com.android.theme.icon.pebble
+drwx------   4 u0_a59         u0_a59          4096 2021-05-26 15:17 com.android.theme.icon.roundedrect
+drwx------   4 u0_a20         u0_a20          4096 2021-05-26 15:17 com.android.theme.icon.squircle
+drwx------   4 u0_a35         u0_a35          4096 2021-05-26 15:17 com.android.theme.icon.taperedrect
+drwx------   4 u0_a29         u0_a29          4096 2021-05-26 15:17 com.android.theme.icon.teardrop
+drwx------   4 u0_a23         u0_a23          4096 2021-05-26 15:17 com.android.theme.icon.vessel
+drwx------   4 u0_a21         u0_a21          4096 2021-05-26 15:17 com.android.theme.icon_pack.circular.android
+drwx------   4 u0_a10         u0_a10          4096 2021-05-26 15:17 com.android.theme.icon_pack.circular.launcher
+drwx------   4 u0_a47         u0_a47          4096 2021-05-26 15:17 com.android.theme.icon_pack.circular.settings
+drwx------   4 u0_a40         u0_a40          4096 2021-05-26 15:17 com.android.theme.icon_pack.circular.systemui
+drwx------   4 u0_a34         u0_a34          4096 2021-05-26 15:17 com.android.theme.icon_pack.circular.themepicker
+drwx------   4 u0_a17         u0_a17          4096 2021-05-26 15:17 com.android.theme.icon_pack.filled.android
+drwx------   4 u0_a22         u0_a22          4096 2021-05-26 15:17 com.android.theme.icon_pack.filled.launcher
+drwx------   4 u0_a25         u0_a25          4096 2021-05-26 15:17 com.android.theme.icon_pack.filled.settings
+drwx------   4 u0_a56         u0_a56          4096 2021-05-26 15:17 com.android.theme.icon_pack.filled.systemui
+drwx------   4 u0_a4          u0_a4           4096 2021-05-26 15:17 com.android.theme.icon_pack.filled.themepicker
+drwx------   4 u0_a24         u0_a24          4096 2021-05-26 15:17 com.android.theme.icon_pack.rounded.android
+drwx------   4 u0_a42         u0_a42          4096 2021-05-26 15:17 com.android.theme.icon_pack.rounded.launcher
+drwx------   4 u0_a55         u0_a55          4096 2021-05-26 15:17 com.android.theme.icon_pack.rounded.settings
+drwx------   4 u0_a9          u0_a9           4096 2021-05-26 15:17 com.android.theme.icon_pack.rounded.systemui
+drwx------   4 u0_a11         u0_a11          4096 2021-05-26 15:17 com.android.theme.icon_pack.rounded.themepicker
+drwx------   4 u0_a69         u0_a69          4096 2021-05-26 15:17 com.android.timezone.updater
+drwx------   5 u0_a95         u0_a95          4096 2021-05-26 15:21 com.android.traceur
+drwx------   4 u0_a110        u0_a110         4096 2021-05-26 15:17 com.android.vending
+drwx------   4 u0_a74         u0_a74          4096 2021-05-26 15:17 com.android.vpndialogs
+drwx------   4 u0_a88         u0_a88          4096 2021-05-26 15:17 com.android.wallpaper.livepicker
+drwx------   4 system         system          4096 2021-05-26 15:17 com.android.wallpaperbackup
+drwx------   4 u0_a126        u0_a126         4096 2021-05-26 15:17 com.breel.wallpapers18
+drwx------   5 u0_a153        u0_a153         4096 2021-05-26 20:05 com.example.native_plasma
+drwx------   9 u0_a132        u0_a132         4096 2021-05-26 15:22 com.google.android.apps.docs
+drwx------  11 u0_a115        u0_a115         4096 2021-05-26 15:21 com.google.android.apps.maps
+drwx------   9 u0_a116        u0_a116         4096 2021-05-26 15:18 com.google.android.apps.messaging
+drwx------   7 u0_a136        u0_a136         4096 2021-05-26 15:18 com.google.android.apps.nexuslauncher
+drwx------   4 u0_a6          u0_a6           4096 2021-05-26 15:17 com.google.android.apps.nexuslauncher.auto_generated_rro_product__
+drwx------   9 u0_a133        u0_a133         4096 2021-05-26 15:21 com.google.android.apps.photos
+drwx------   4 u0_a99         u0_a99          4096 2021-05-26 15:17 com.google.android.apps.pixelmigrate
+drwx------   4 u0_a104        u0_a104         4096 2021-05-26 15:17 com.google.android.apps.restore
+drwx------   6 u0_a141        u0_a141         4096 2021-05-26 15:21 com.google.android.apps.wallpaper
+drwx------   4 u0_a114        u0_a114         4096 2021-05-26 15:17 com.google.android.apps.wallpaper.nexus
+drwx------   8 u0_a103        u0_a103         4096 2021-05-26 15:17 com.google.android.apps.wellbeing
+drwx------   9 u0_a129        u0_a129         4096 2021-05-26 15:18 com.google.android.apps.youtube.music
+drwx------   7 u0_a128        u0_a128         4096 2021-05-26 15:18 com.google.android.calendar
+drwx------   4 u0_a81         u0_a81          4096 2021-05-26 15:17 com.google.android.captiveportallogin
+drwx------   4 u0_a152        u0_a152         4096 2021-05-26 15:17 com.google.android.cellbroadcastreceiver
+drwx------   4 network_stack  network_stack   4096 2021-05-26 15:17 com.google.android.cellbroadcastservice
+drwx------   6 u0_a96         u0_a96          4096 2021-05-26 15:21 com.google.android.configupdater
+drwx------   7 u0_a112        u0_a112         4096 2021-05-26 15:18 com.google.android.deskclock
+drwx------   6 u0_a66         u0_a66          4096 2021-05-26 15:21 com.google.android.documentsui
+drwx------   4 u0_a145        u0_a145         4096 2021-05-26 15:17 com.google.android.ext.services
+drwx------   4 u0_a89         u0_a89          4096 2021-05-26 15:17 com.google.android.ext.shared
+drwx------   4 u0_a142        u0_a142         4096 2021-05-26 15:17 com.google.android.feedback
+drwx------   8 u0_a123        u0_a123         4096 2021-05-26 15:18 com.google.android.gm
+drwx--x--x  18 u0_a108        u0_a108         4096 2021-05-26 15:23 com.google.android.gms
+drwx------  16 u0_a106        u0_a106         4096 2021-05-26 15:22 com.google.android.googlequicksearchbox
+drwx------   8 u0_a108        u0_a108         4096 2021-05-26 15:18 com.google.android.gsf
+drwx------   4 u0_a150        u0_a150         4096 2021-05-26 15:17 com.google.android.hotspot2.osulogin
+drwx------   8 u0_a105        u0_a105         4096 2021-05-26 15:20 com.google.android.ims
+drwx------   7 u0_a122        u0_a122         4096 2021-05-26 15:18 com.google.android.inputmethod.latin
+drwx------   4 u0_a117        u0_a117         4096 2021-05-26 15:17 com.google.android.markup
+drwx------   4 u0_a124        u0_a124         4096 2021-05-26 15:17 com.google.android.modulemetadata
+drwx------   4 network_stack  network_stack   4096 2021-05-26 15:17 com.google.android.networkstack
+drwx------   4 network_stack  network_stack   4096 2021-05-26 15:17 com.google.android.networkstack.permissionconfig
+drwx------   4 network_stack  network_stack   4096 2021-05-26 15:17 com.google.android.networkstack.tethering
+drwx------   4 u0_a28         u0_a28          4096 2021-05-26 15:17 com.google.android.networkstack.tethering.emulator
+drwx------   5 u0_a135        u0_a135         4096 2021-05-26 15:22 com.google.android.onetimeinitializer
+drwx------   4 u0_a36         u0_a36          4096 2021-05-26 15:17 com.google.android.overlay.emulatorconfig
+drwx------   4 u0_a30         u0_a30          4096 2021-05-26 15:17 com.google.android.overlay.googleconfig
+drwx------   4 u0_a1          u0_a1           4096 2021-05-26 15:17 com.google.android.overlay.googlewebview
+drwx------   4 u0_a15         u0_a15          4096 2021-05-26 15:17 com.google.android.overlay.permissioncontroller
+drwx------   4 u0_a27         u0_a27          4096 2021-05-26 15:17 com.google.android.overlay.pixelconfigcommon
+drwx------   4 u0_a75         u0_a75          4096 2021-05-26 15:17 com.google.android.packageinstaller
+drwx------   6 u0_a97         u0_a97          4096 2021-05-26 15:22 com.google.android.partnersetup
+drwx------   4 u0_a151        u0_a151         4096 2021-05-26 15:17 com.google.android.permissioncontroller
+drwx------   4 u0_a91         u0_a91          4096 2021-05-26 15:17 com.google.android.printservice.recommendation
+drwx------   7 u0_a102        u0_a102         4096 2021-05-26 15:22 com.google.android.projection.gearhead
+drwx------   7 u0_a146        u0_a146         4096 2021-05-26 15:18 com.google.android.providers.media.module
+drwx------   4 u0_a137        u0_a137         4096 2021-05-26 15:17 com.google.android.sdksetup
+drwx------   6 u0_a101        u0_a101         4096 2021-05-26 15:22 com.google.android.setupwizard
+drwx------   4 u0_a119        u0_a119         4096 2021-05-26 15:17 com.google.android.soundpicker
+drwx------   5 u0_a130        u0_a130         4096 2021-05-26 15:17 com.google.android.syncadapters.contacts
+drwx------   4 u0_a77         u0_a77          4096 2021-05-26 15:17 com.google.android.tag
+drwx------   4 u0_a127        u0_a127         4096 2021-05-26 15:17 com.google.android.trichromelibrary_410410681
+drwx------   4 u0_a113        u0_a113         4096 2021-05-26 15:17 com.google.android.tts
+drwx------   9 u0_a131        u0_a131         4096 2021-05-26 15:22 com.google.android.videos
+drwx------   7 u0_a111        u0_a111         4096 2021-05-26 15:18 com.google.android.webview
+drwx------   4 u0_a149        u0_a149         4096 2021-05-26 15:17 com.google.android.wifi.resources
+drwx------   8 u0_a121        u0_a121         4096 2021-05-26 15:18 com.google.android.youtube
+drwx------   4 u0_a118        u0_a118         4096 2021-05-26 15:17 com.google.mainline.telemetry
+drwx------   4 u0_a109        u0_a109         4096 2021-05-26 15:17 org.chromium.webview_shell
+generic_x86_arm:/data/data # cd com.example.native_plasma
+generic_x86_arm:/data/data/com.example.native_plasma # dir
+/system/bin/sh: dir: inaccessible or not found
+127|generic_x86_arm:/data/data/com.example.native_plasma # ls
+cache  code_cache  files  lib
+generic_x86_arm:/data/data/com.example.native_plasma # ls -la
+total 56
+drwx------   5 u0_a153 u0_a153        4096 2021-05-26 20:05 .
+drwxrwx--x 190 system  system        12288 2021-05-26 20:03 ..
+drwxrws--x   2 u0_a153 u0_a153_cache  4096 2021-05-26 20:03 cache
+drwxrws--x   2 u0_a153 u0_a153_cache  4096 2021-05-26 20:03 code_cache
+drwxrwx--x   2 u0_a153 u0_a153        4096 2021-05-26 20:05 files
+lrwxrwxrwx   1 root    root             98 2021-05-26 20:03 lib -> /data/app/~~3gdvgRfyds6V8vjJ6Wet3w==/com.example.native_plasma-QLq9HFejYB2YTcVEmjBgsg==/lib/x86
+generic_x86_arm:/data/data/com.example.native_plasma # run-as com.example.native_plasma cp /data/local/tmp/lldb-server /data/data/com.example.native_plasma
+generic_x86_arm:/data/data/com.example.native_plasma # ls
+cache  code_cache  files  lib  lldb-server
+generic_x86_arm:/data/data/com.example.native_plasma # run-as com.example.native_plasma
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ./lldb-server platform --server --listen "*:9090"
+failed to listen: Operation not permitted
+255|generic_x86_arm:/data/user/0/com.example.native_plasma $ run-as com.example.native_plasma | lldb-server platform --server --listen "*:9090"
+sh: lldb-server: inaccessible or not found
+sh: run-as: can't execute: Permission denied
+127|generic_x86_arm:/data/user/0/com.example.native_plasma $ run-as com.example.native_plasma lldb-server platform --server --listen "*:9090"
+sh: run-as: can't execute: Permission denied
+126|generic_x86_arm:/data/user/0/com.example.native_plasma $ run-as com.example.native_plasma
+sh: run-as: can't execute: Permission denied
+126|generic_x86_arm:/data/user/0/com.example.native_plasma $ exit
+126|generic_x86_arm:/data/data/com.example.native_plasma # exit
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb root
+adbd is already running as root
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb shell
+generic_x86_arm:/ # cd /data/data/com.example.native_plasma
+generic_x86_arm:/data/data/com.example.native_plasma # ls
+cache  code_cache  files  lib  lldb-server
+generic_x86_arm:/data/data/com.example.native_plasma # ./lldb-server platform --server --listen "*:9090"
+Connection established.
+^C
+130|generic_x86_arm:/data/data/com.example.native_plasma # ^C
+130|generic_x86_arm:/data/data/com.example.native_plasma # exit
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb root
+adbd is already running as root
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb shell
+generic_x86_arm:/ # run-as com.example.native_plasma
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ls
+cache  code_cache  files  lib  lldb-server
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ./lldb-server platform --server --listen "*:9090"
+failed to listen: Operation not permitted
+255|generic_x86_arm:/data/user/0/com.example.native_plasma $ uid
+sh: uid: inaccessible or not found
+127|generic_x86_arm:/data/user/0/com.example.native_plasma $ ps
+USER            PID   PPID     VSZ    RSS WCHAN            ADDR S NAME
+u0_a153        8380   8377   12916   3180 __ia32_co+          0 S sh
+u0_a153        8383   8380   12712   3772 0                   0 R ps
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ps -p 98010
+USER            PID   PPID     VSZ    RSS WCHAN            ADDR S NAME
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ps -p 8010
+USER            PID   PPID     VSZ    RSS WCHAN            ADDR S NAME
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ps
+USER            PID   PPID     VSZ    RSS WCHAN            ADDR S NAME
+u0_a153        8380   8377   12916   3180 __ia32_co+          0 S sh
+u0_a153        8429   8380   12712   3656 0                   0 R ps
+generic_x86_arm:/data/user/0/com.example.native_plasma $ run-as root
+sh: run-as: can't execute: Permission denied
+126|generic_x86_arm:/data/user/0/com.example.native_plasma $ exit
+126|generic_x86_arm:/ # ps
+USER            PID   PPID     VSZ    RSS WCHAN            ADDR S NAME
+root           8377   7350   12916   3236 __ia32_co+          0 S sh
+root           8430   8377   12328   3364 0                   0 R ps
+generic_x86_arm:/ # exit
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb root
+adbd is already running as root
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb shell
+generic_x86_arm:/ # cd /data/data/com.example.native_plasma
+generic_x86_arm:/data/data/com.example.native_plasma # ./lldb-server platform --server --listen "*:9090"
+Connection established.
+^C
+130|generic_x86_arm:/data/data/com.example.native_plasma # pidof com.example.native_plasma
+8400
+generic_x86_arm:/data/data/com.example.native_plasma # ./lldb-server platform --server --listen "*:9090"
+Connection established.
+^C
+130|generic_x86_arm:/data/data/com.example.native_plasma # run-as com.example.native_plasma
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ls -la
+total 25788
+drwx------   5 u0_a153 u0_a153           4096 2021-05-26 21:06 .
+drwxrwx--x 190 system  system           12288 2021-05-26 20:03 ..
+drwxrws--x   2 u0_a153 u0_a153_cache     4096 2021-05-26 20:03 cache
+drwxrws--x   2 u0_a153 u0_a153_cache     4096 2021-05-26 20:03 code_cache
+drwxrwx--x   2 u0_a153 u0_a153           4096 2021-05-26 20:05 files
+lrwxrwxrwx   1 root    root                98 2021-05-26 20:03 lib -> /data/app/~~3gdvgRfyds6V8vjJ6Wet3w==/com.example.native_plasma-QLq9HFejYB2YTcVEmjBgsg==/lib/x86
+-rwxrwxrwx   1 u0_a153 u0_a153       26343620 2021-05-26 21:06 lldb-server
+generic_x86_arm:/data/user/0/com.example.native_plasma $ chmod +x lldb-server
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ./lldb-server platform --server --listen "*:9090"
+failed to listen: Operation not permitted
+255|generic_x86_arm:/data/user/0/com.example.native_plasma $ run-as root
+sh: run-as: can't execute: Permission denied
+126|generic_x86_arm:/data/user/0/com.example.native_plasma $ exit
+126|generic_x86_arm:/data/data/com.example.native_plasma # exit
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb kill-server
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb start-server
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb device
+adb.exe: unknown command device
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb devices
+List of devices attached
+emulator-5554   device
+
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb root
+adbd is already running as root
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb shell
+generic_x86_arm:/ # cd /data/data/com.example.native_plasma
+generic_x86_arm:/data/data/com.example.native_plasma # ls -la
+total 25788
+drwx------   5 u0_a153 u0_a153           4096 2021-05-26 21:06 .
+drwxrwx--x 190 system  system           12288 2021-05-26 20:03 ..
+drwxrws--x   2 u0_a153 u0_a153_cache     4096 2021-05-26 20:03 cache
+drwxrws--x   2 u0_a153 u0_a153_cache     4096 2021-05-26 20:03 code_cache
+drwxrwx--x   2 u0_a153 u0_a153           4096 2021-05-26 20:05 files
+lrwxrwxrwx   1 root    root                98 2021-05-26 20:03 lib -> /data/app/~~3gdvgRfyds6V8vjJ6Wet3w==/com.example.native_plasma-QLq9HFejYB2YTcVEmjBgsg==/lib/x86
+-rwxrwxrwx   1 u0_a153 u0_a153       26343620 2021-05-26 21:06 lldb-server
+generic_x86_arm:/data/data/com.example.native_plasma # chmod +x lldb-server
+generic_x86_arm:/data/data/com.example.native_plasma # ./lldb-server p --server --listen "*:9090"
+Connection established.
+Connection established.
+error: lost connection
+lldb-server exiting...
+^C
+130|generic_x86_arm:/data/data/com.example.native_plasma # pidof com.example.native_plasma
+8400
+generic_x86_arm:/data/data/com.example.native_plasma # ./lldb-server p --server --listen "*:9090"
+Connection established.
+error: lost connection
+lldb-server exiting...
+^C
+130|generic_x86_arm:/data/data/com.example.native_plasma # ./lldb-server p --server --listen "*:9090"
+Connection established.
+^C
+130|generic_x86_arm:/data/data/com.example.native_plasma # run-as com.example.native_example
+run-as: unknown package: com.example.native_example
+1|generic_x86_arm:/data/data/com.example.native_plasma # run-as com.example.native_plasma
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ls -la
+total 25788
+drwx------   5 u0_a153 u0_a153           4096 2021-05-26 21:06 .
+drwxrwx--x 190 system  system           12288 2021-05-26 20:03 ..
+drwxrws--x   2 u0_a153 u0_a153_cache     4096 2021-05-26 20:03 cache
+drwxrws--x   2 u0_a153 u0_a153_cache     4096 2021-05-26 20:03 code_cache
+drwxrwx--x   2 u0_a153 u0_a153           4096 2021-05-26 20:05 files
+lrwxrwxrwx   1 root    root                98 2021-05-26 20:03 lib -> /data/app/~~3gdvgRfyds6V8vjJ6Wet3w==/com.example.native_plasma-QLq9HFejYB2YTcVEmjBgsg==/lib/x86
+-rwxrwxrwx   1 u0_a153 u0_a153       26343620 2021-05-26 21:06 lldb-server
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ./lldb-server p --server --listen "*:9090"
+failed to listen: Operation not permitted
+255|generic_x86_arm:/data/user/0/com.example.native_plasma $ run-as root
+sh: run-as: can't execute: Permission denied
+126|generic_x86_arm:/data/user/0/com.example.native_plasma $ run-as com.example.native_plasma
+sh: run-as: can't execute: Permission denied
+126|generic_x86_arm:/data/user/0/com.example.native_plasma $ ls -la
+total 25788
+drwx------   5 u0_a153 u0_a153           4096 2021-05-26 21:06 .
+drwxrwx--x 190 system  system           12288 2021-05-26 20:03 ..
+drwxrws--x   2 u0_a153 u0_a153_cache     4096 2021-05-26 20:03 cache
+drwxrws--x   2 u0_a153 u0_a153_cache     4096 2021-05-26 20:03 code_cache
+drwxrwx--x   2 u0_a153 u0_a153           4096 2021-05-26 20:05 files
+lrwxrwxrwx   1 root    root                98 2021-05-26 20:03 lib -> /data/app/~~3gdvgRfyds6V8vjJ6Wet3w==/com.example.native_plasma-QLq9HFejYB2YTcVEmjBgsg==/lib/x86
+-rwxrwxrwx   1 u0_a153 u0_a153       26343620 2021-05-26 21:06 lldb-server
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ./lldb-server p --server --listen "*:9090"
+failed to listen: Operation not permitted
+255|generic_x86_arm:/data/user/0/com.example.native_plasma $ exit
+255|generic_x86_arm:/data/data/com.example.native_plasma # ./lldb-server p --server --listen "*:9090"
+Connection established.
+^C
+130|generic_x86_arm:/data/data/com.example.native_plasma # exit
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>adb shell
+generic_x86_arm:/ # su
+generic_x86_arm:/ # cd /data/local/tmp
+generic_x86_arm:/data/local/tmp # chmod +x lldb-server
+generic_x86_arm:/data/local/tmp # ./lldb-server -p --server --listen "*:9090"
+Usage:
+  ./lldb-server v[ersion]
+  ./lldb-server g[dbserver] [options]
+  ./lldb-server p[latform] [options]
+Invoke subcommand for additional help
+generic_x86_arm:/data/local/tmp # ./lldb-server p --server --listen "*:9090"
+Connection established.
+^C
+130|generic_x86_arm:/data/local/tmp # run-as com.example.native_plasma
+generic_x86_arm:/data/user/0/com.example.native_plasma $ ./lldb-server p --server --listen "*:9090"
+failed to listen: Operation not permitted
+255|generic_x86_arm:/data/user/0/com.example.native_plasma $ su
+sh: su: inaccessible or not found
+127|generic_x86_arm:/data/user/0/com.example.native_plasma $ su root
+sh: su: inaccessible or not found
+127|generic_x86_arm:/data/user/0/com.example.native_plasma $ sudo root
+sh: sudo: inaccessible or not found
+127|generic_x86_arm:/data/user/0/com.example.native_plasma $ exit
+127|generic_x86_arm:/data/local/tmp # su
+generic_x86_arm:/data/local/tmp # cd /data/data/com.example.native_plasma
+generic_x86_arm:/data/data/com.example.native_plasma # ls
+cache  code_cache  files  lib  lldb-server
+generic_x86_arm:/data/data/com.example.native_plasma # ./lldb-server p --server --listen "*:9090"
+Connection established.
+
+C:\Users\J\AppData\Local\Android\Sdk\platform-tools>

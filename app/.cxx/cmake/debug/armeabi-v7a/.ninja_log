@@ -1,0 +1,23 @@
+# ninja log v5
+6	6402	6445653115775577	CMakeFiles/native-plasma.dir/main.cpp.o	98f13fad7e3589e7
+17	7898	6445653131626817	CMakeFiles/native-plasma.dir/imgui/imgui_draw.cpp.o	1c67d0f9e0c2f76d
+3	8010	6445653132617524	CMakeFiles/native_app_glue.dir/C_/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/sources/android/native_app_glue/android_native_app_glue.c.o	bdf936784936753c
+6647	6876	6445655614976614	C:/Users/J/Desktop/Code/sand/imgui/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative.so	11e3f7ff8c1b3d4
+8011	9245	6445653140222903	libnative_app_glue.a	afc7274b531aee4f
+11	7942	6445653131696862	CMakeFiles/native-plasma.dir/imgui/imgui_demo.cpp.o	2a0675d118a48a83
+6403	9965	6445653152445976	CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_android.cpp.o	fcf48dd162955f13
+7254	7877	6445653131576791	CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_opengl3.cpp.o	21da1e3581859d06
+14	7254	6445653124952098	CMakeFiles/native-plasma.dir/imgui/imgui_tables.cpp.o	29e657c0dd5f0173
+8	8915	6445653141944119	CMakeFiles/native-plasma.dir/imgui/imgui.cpp.o	8861130f7097bd40
+7877	11130	6445653164104243	CMakeFiles/native-plasma.dir/imgui/imgui_widgets.cpp.o	f4aa31aa3e66bfea
+11151	14349	6445653194944629	C:/Users/J/Desktop/Code/sand/imgui/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-plasma.so	3eea7b4bcf52c040
+1	36	0	clean	6dd091519ded1980
+23	1044	6445655555274285	CMakeFiles/native.dir/imgui/backends/imgui_impl_opengl3.cpp.o	3d3a05cd3d8cbd98
+10	1085	6445655556285001	CMakeFiles/native.dir/main.cpp.o	5db68031f31548ec
+1044	6647	6445655613115290	CMakeFiles/native.dir/imgui/imgui_widgets.cpp.o	d0fe49e14c0c7633
+16	3903	6445655583324184	CMakeFiles/native.dir/imgui/imgui_tables.cpp.o	7bdbc8b4b7d56add
+13	4522	6445655591810192	CMakeFiles/native.dir/imgui/imgui_demo.cpp.o	7838b1089c5d7ddd
+20	5077	6445655597063917	CMakeFiles/native.dir/imgui/imgui_draw.cpp.o	ad1f50b182ac6b90
+7	6361	6445655610283319	CMakeFiles/native.dir/imgui/imgui.cpp.o	79bcc7b16e14569e
+1085	5224	6445655598464925	CMakeFiles/native.dir/imgui/backends/imgui_impl_android.cpp.o	427de1a27d3d2f24
+1	18	0	clean	6dd091519ded1980

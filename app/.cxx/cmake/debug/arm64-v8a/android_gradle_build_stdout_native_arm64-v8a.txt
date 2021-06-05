@@ -1,0 +1,10 @@
+ninja: Entering directory `C:\Users\J\Desktop\Code\sand\imgui\app\.cxx\cmake\debug\arm64-v8a'
+[1/9] Building CXX object CMakeFiles/native.dir/main.cpp.o
+[2/9] Building CXX object CMakeFiles/native.dir/imgui/backends/imgui_impl_opengl3.cpp.o
+[3/9] Building CXX object CMakeFiles/native.dir/imgui/imgui_tables.cpp.o
+[4/9] Building CXX object CMakeFiles/native.dir/imgui/backends/imgui_impl_android.cpp.o
+[5/9] Building CXX object CMakeFiles/native.dir/imgui/imgui_demo.cpp.o
+[6/9] Building CXX object CMakeFiles/native.dir/imgui/imgui_draw.cpp.o
+[7/9] Building CXX object CMakeFiles/native.dir/imgui/imgui.cpp.o
+[8/9] Building CXX object CMakeFiles/native.dir/imgui/imgui_widgets.cpp.o
+[9/9] Linking CXX shared library C:\Users\J\Desktop\Code\sand\imgui\app\build\intermediates\cmake\debug\obj\arm64-v8a\libnative.so

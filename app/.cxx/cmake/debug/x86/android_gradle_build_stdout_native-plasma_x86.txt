@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\J\Desktop\Code\sand\imgui\app\.cxx\cmake\debug\x86'
+[1/1] Linking CXX shared library C:\Users\J\Desktop\Code\sand\imgui\app\build\intermediates\cmake\debug\obj\x86\libnative-plasma.so

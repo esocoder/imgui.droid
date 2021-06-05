@@ -1,0 +1,24 @@
+# ninja log v5
+15	2418	6445653222094169	CMakeFiles/native-plasma.dir/main.cpp.o	1987f26074b9c1fa
+20	4625	6445653244339958	CMakeFiles/native-plasma.dir/imgui/imgui_draw.cpp.o	2036adf25807c335
+5636	5794	6445655673618416	C:/Users/J/Desktop/Code/sand/imgui/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative.so	ba4aae18b0dedf2b
+5	5237	6445653249813849	CMakeFiles/native_app_glue.dir/C_/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/sources/android/native_app_glue/android_native_app_glue.c.o	7e123590b5204a0b
+4018	6974	6445653268096794	CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_android.cpp.o	d93295c9a83624ba
+5238	5478	6445653252465715	libnative_app_glue.a	afc7274b531aee4f
+9	4702	6445653244440033	CMakeFiles/native-plasma.dir/imgui/imgui_demo.cpp.o	95c6beeb05ea8dc4
+17	3409	6445653232571613	CMakeFiles/native-plasma.dir/imgui/imgui_tables.cpp.o	899955c6a099cc28
+3410	4018	6445653238385745	CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_opengl3.cpp.o	f1e0a55095a20823
+12	6463	6445653262913118	CMakeFiles/native-plasma.dir/imgui/imgui.cpp.o	8ca1e4a6cafbf840
+2419	7597	6445653274381241	CMakeFiles/native-plasma.dir/imgui/imgui_widgets.cpp.o	937e5f6d56a6f0dc
+7597	8515	6445653282935078	C:/Users/J/Desktop/Code/sand/imgui/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-plasma.so	63b32ecbfab2f83e
+1	39	0	clean	6dd091519ded1980
+8	765	6445655622972293	CMakeFiles/native.dir/main.cpp.o	9347fb3edc8f9757
+766	1538	6445655630027296	CMakeFiles/native.dir/imgui/backends/imgui_impl_opengl3.cpp.o	f7f2c2e1ee2ffae0
+11	2909	6445655643727015	CMakeFiles/native.dir/imgui/imgui_tables.cpp.o	e2b6f74d3e46650a
+1539	5635	6445655672307276	CMakeFiles/native.dir/imgui/imgui_widgets.cpp.o	a769baea5dbec097
+19	3711	6445655652433188	CMakeFiles/native.dir/imgui/backends/imgui_impl_android.cpp.o	98f9f76c52f5af55
+5	5163	6445655667293712	CMakeFiles/native.dir/imgui/imgui.cpp.o	1d5166eb0f52a25
+14	3865	6445655654414603	CMakeFiles/native.dir/imgui/imgui_demo.cpp.o	3147e5cd9ec935cb
+17	4033	6445655656325949	CMakeFiles/native.dir/imgui/imgui_draw.cpp.o	a7698286b5e90c24
+19	2721	6446386889904982	build.ninja	dbb3a900665ea906
+0	16	0	clean	6dd091519ded1980

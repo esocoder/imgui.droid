@@ -1,0 +1,210 @@
+{
+  "abi": "X86_64",
+  "info": {
+    "abi": "X86_64",
+    "bitness": 64,
+    "deprecated": false,
+    "default": true
+  },
+  "originalCxxBuildFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\x86_64",
+  "cxxBuildFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\x86_64",
+  "abiPlatformVersion": 16,
+  "cmake": {
+    "cmakeWrappingBaseFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cxx\\release\\x86_64",
+    "cmakeArtifactsBaseFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\x86_64",
+    "effectiveConfiguration": {
+      "name": "traditional-android-studio-cmake-environment",
+      "description": "Composite reified CMakeSettings configuration",
+      "generator": "Ninja",
+      "inheritEnvironments": [
+        "ndk"
+      ],
+      "buildRoot": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\x86_64",
+      "cmakeToolchain": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\build\\cmake\\android.toolchain.cmake",
+      "cmakeExecutable": "C:\\Program Files\\CMake\\bin\\cmake.exe",
+      "variables": [
+        {
+          "name": "CMAKE_FIND_ROOT_PATH",
+          "value": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\prefab\\x86_64\\prefab"
+        },
+        {
+          "name": "CMAKE_BUILD_TYPE",
+          "value": "Release"
+        },
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\build\\cmake\\android.toolchain.cmake"
+        },
+        {
+          "name": "ANDROID_ABI",
+          "value": "x86_64"
+        },
+        {
+          "name": "ANDROID_NDK",
+          "value": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448"
+        },
+        {
+          "name": "ANDROID_PLATFORM",
+          "value": "android-16"
+        },
+        {
+          "name": "CMAKE_ANDROID_ARCH_ABI",
+          "value": "x86_64"
+        },
+        {
+          "name": "CMAKE_ANDROID_NDK",
+          "value": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448"
+        },
+        {
+          "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
+          "value": "ON"
+        },
+        {
+          "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
+          "value": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\build\\intermediates\\cmake\\release\\obj\\x86_64"
+        },
+        {
+          "name": "CMAKE_RUNTIME_OUTPUT_DIRECTORY",
+          "value": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\build\\intermediates\\cmake\\release\\obj\\x86_64"
+        },
+        {
+          "name": "CMAKE_SYSTEM_NAME",
+          "value": "Android"
+        },
+        {
+          "name": "CMAKE_SYSTEM_VERSION",
+          "value": "16"
+        }
+      ]
+    },
+    "cmakeServerLogFile": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\x86_64\\cmake_server_log.txt"
+  },
+  "variant": {
+    "buildSystemArgumentList": [],
+    "cFlagsList": [],
+    "cppFlagsList": [],
+    "variantName": "release",
+    "objFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\build\\intermediates\\cmake\\release\\obj",
+    "soFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\build\\intermediates\\cmake\\release\\lib",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": [],
+    "implicitBuildTargetSet": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "module": {
+      "cxxFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx",
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app",
+      "moduleBuildFile": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\build.gradle",
+      "makeFile": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\src\\main\\cpp\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "ndkFolder": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448",
+      "ndkVersion": "23.0.7123448",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 31,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29,
+          "R": 30,
+          "S": 31
+        }
+      },
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "originalCmakeToolchainFile": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\build\\cmake\\android.toolchain.cmake",
+      "cmakeToolchainFile": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\build\\cmake\\android.toolchain.cmake",
+      "cmake": {
+        "isValidCmakeAvailable": true,
+        "cmakeExe": "C:\\Program Files\\CMake\\bin\\cmake.exe",
+        "minimumCmakeVersion": "3.19.3",
+        "isPreferCmakeFileApiEnabled": true
+      },
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
+          "ARM64_V8A": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+          "X86": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
+          "X86_64": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      },
+      "project": {
+        "rootBuildGradleFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma",
+        "cxxFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\.cxx",
+        "compilerSettingsCacheFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\.cxx",
+        "sdkFolder": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk",
+        "isNativeCompilerSettingsCacheEnabled": false,
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isPrefabEnabled": false,
+        "isV2NativeModelEnabled": true
+      },
+      "nativeBuildOutputLevel": "QUIET"
+    },
+    "prefabDirectory": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\prefab"
+  },
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "prefabFolder": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\.cxx\\cmake\\release\\prefab\\x86_64"
+}

@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "(x86)",//"ARM (armeabi-v7a)",
+            "includePath": [
+                "${workspaceFolder}/app/src/main/cpp",
+                "C:/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/sources/android/native_app_glue",
+                "C:/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include"
+            ],
+            // "defines": [
+            //     "_DEBUG",
+            //     "UNICODE",
+            //     "_UNICODE"
+            // ],
+            // "windowsSdkVersion": "10.0.19041.0",
+            // "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            //"intelliSenseMode": "clang-arm",
+            "compileCommands": "${workspaceFolder}/app/.cxx/cmake/debug/x86/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

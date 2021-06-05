@@ -1,0 +1,4 @@
+C:/Users/J/Desktop/Code/ext/ndk/native-plasma/app/.cxx/cmake/release/armeabi-v7a/CMakeFiles/native_app_glue.dir
+C:/Users/J/Desktop/Code/ext/ndk/native-plasma/app/.cxx/cmake/release/armeabi-v7a/CMakeFiles/native-plasma.dir
+C:/Users/J/Desktop/Code/ext/ndk/native-plasma/app/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/J/Desktop/Code/ext/ndk/native-plasma/app/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir

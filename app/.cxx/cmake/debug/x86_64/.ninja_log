@@ -1,0 +1,24 @@
+# ninja log v5
+6	821	6445653361210522	CMakeFiles/native_app_glue.dir/C_/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/sources/android/native_app_glue/android_native_app_glue.c.o	d372faf2b4829cae
+13	986	6445653362071076	CMakeFiles/native-plasma.dir/main.cpp.o	cfc941c0b9f8c7da
+21	5205	6445653404861432	CMakeFiles/native-plasma.dir/imgui/imgui_draw.cpp.o	d668d21c66dc0115
+2688	5840	6445653411356024	CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_android.cpp.o	92a8f2a0168e8655
+822	1841	6445653370256885	libnative_app_glue.a	afc7274b531aee4f
+15	3328	6445653385217494	CMakeFiles/native-plasma.dir/imgui/imgui_demo.cpp.o	c25bf8225a9e3a87
+1841	2687	6445653379723607	CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_opengl3.cpp.o	f65fbbc596b99f7f
+18	4128	6445653393873646	CMakeFiles/native-plasma.dir/imgui/imgui_tables.cpp.o	5f7f9679ce39053a
+10	6044	6445653413637651	CMakeFiles/native-plasma.dir/imgui/imgui.cpp.o	da8bc4e26e3fadfb
+986	6427	6445653417490849	CMakeFiles/native-plasma.dir/imgui/imgui_widgets.cpp.o	dbe14035947c53e5
+6428	7057	6445653423220138	C:/Users/J/Desktop/Code/sand/imgui/app/build/intermediates/cmake/debug/obj/x86_64/libnative-plasma.so	1e27a22e5557cfff
+1	34	0	clean	6dd091519ded1980
+23	858	6445655743588371	CMakeFiles/native.dir/imgui/backends/imgui_impl_opengl3.cpp.o	3b595d5092b8f7b8
+7	863	6445655742927907	CMakeFiles/native.dir/main.cpp.o	32bab4af4606dc47
+13	3055	6445655766624715	CMakeFiles/native.dir/imgui/imgui_demo.cpp.o	9cef02fb8dd3a87f
+20	4031	6445655776481714	CMakeFiles/native.dir/imgui/imgui_tables.cpp.o	21c0696d47702bc7
+864	5758	6445655794154232	CMakeFiles/native.dir/imgui/imgui_widgets.cpp.o	611a6a974dbe76ff
+859	4199	6445655778503133	CMakeFiles/native.dir/imgui/backends/imgui_impl_android.cpp.o	caaccbf0390e0edd
+10	5482	6445655791362261	CMakeFiles/native.dir/imgui/imgui.cpp.o	11dac1accb97635
+17	4772	6445655784247197	CMakeFiles/native.dir/imgui/imgui_draw.cpp.o	4d0edf870ca774cd
+5759	5923	6445655795595244	C:/Users/J/Desktop/Code/sand/imgui/app/build/intermediates/cmake/debug/obj/x86_64/libnative.so	3436efaabe08b12
+111	487	6446386902523671	build.ninja	e62af9d87a403ba3
+0	16	0	clean	6dd091519ded1980

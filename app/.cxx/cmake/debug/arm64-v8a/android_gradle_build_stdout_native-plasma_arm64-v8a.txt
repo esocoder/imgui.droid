@@ -1,0 +1,12 @@
+ninja: Entering directory `C:\Users\J\Desktop\Code\sand\imgui\app\.cxx\cmake\debug\arm64-v8a'
+[1/11] Building CXX object CMakeFiles/native-plasma.dir/main.cpp.o
+[2/11] Building CXX object CMakeFiles/native-plasma.dir/imgui/imgui_tables.cpp.o
+[3/11] Building CXX object CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_opengl3.cpp.o
+[4/11] Building CXX object CMakeFiles/native-plasma.dir/imgui/imgui_draw.cpp.o
+[5/11] Building CXX object CMakeFiles/native-plasma.dir/imgui/imgui_demo.cpp.o
+[6/11] Building C object CMakeFiles/native_app_glue.dir/C_/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/sources/android/native_app_glue/android_native_app_glue.c.o
+[7/11] Linking C static library libnative_app_glue.a
+[8/11] Building CXX object CMakeFiles/native-plasma.dir/imgui/imgui.cpp.o
+[9/11] Building CXX object CMakeFiles/native-plasma.dir/imgui/backends/imgui_impl_android.cpp.o
+[10/11] Building CXX object CMakeFiles/native-plasma.dir/imgui/imgui_widgets.cpp.o
+[11/11] Linking CXX shared library C:\Users\J\Desktop\Code\sand\imgui\app\build\intermediates\cmake\debug\obj\arm64-v8a\libnative-plasma.so

@@ -1,0 +1,1 @@
+C:\Users\J\Desktop\Code\ext\ndk\native-plasma\app\src\main\cpp\CMakeLists.txt

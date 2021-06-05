@@ -1,0 +1,7 @@
+Executable : ninja.exe
+arguments : 
+-C
+C:\Users\J\Desktop\Code\sand\imgui\app\.cxx\cmake\debug\arm64-v8a
+native
+jvmArgs : 
+

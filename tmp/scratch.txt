@@ -1,0 +1,29 @@
+C:\Program Files\Android\Android Studio\jre
+
+(lldb) script exec("if libstdcxx_printers_available: printers.register_libstdcxx_printers(None)")
+(lldb) script exec("if lldb.debugger.GetCategory('libstdc++-v6').IsValid(): lldb.debugger.GetCategory('gnu-libstdc++').SetEnabled(False)")
+(int) $0 = 1
+
+UR|kVSIm44o;
+UR|kVSIm44o;UR|kVSIm44o;
+
+C:\Users\J\AppData\Local\Android\Sdk\ndk\23.0.7123448\sources\android\
+
+C:/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/sources/android/native_app_glue
+
+C:/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/
+
+C:\Users\J\AppData\Local\Android\Sdk\ndk\23.0.7123448\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\11.0.5\lib\linux\arm
+
+C:\Users\J\AppData\Local\Android\Sdk\ndk\23.0.7123448\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include
+
+C:/Users/J/Desktop/Code/ext/ndk/native-plasma/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-plasma.so
+/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-plasma.so
+
+C:\Users\J\AppData\Local\Android\Sdk\ndk\23.0.7123448\toolchains\llvm\prebuilt\windows-x86_64\bin\lldb.exe
+
+adb -s emulator-5554 install app\build\outputs\apk\debug\app-debug.apk
+adb shell am start -n "com.esocodes.sand/android.app.NativeActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -D
+adb shell cat /data/local/tmp/lldb-server | run-as com.esocodes.sand sh -c 'cat > /data/data/com.esocodes.sand/lldb/bin/lldb-server && chmod 700 /data/data/com.esocodes.sand/lldb/bin/lldb-server'
+
+run-as com.esocodes.sand sh -c 'cat > lldb-server p --server --listen "*:9090"'

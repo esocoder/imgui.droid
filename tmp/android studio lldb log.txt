@@ -1,0 +1,19 @@
+
+05/26 23:10:23: Launching 'app' on Pixel XL API 30.
+Install successfully finished in 2 s 610 ms.
+$ adb shell am start -n "com.esocodes.sand/android.app.NativeActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -D
+Waiting for application to come online: com.esocodes.sand.test | com.esocodes.sand
+Waiting for application to come online: com.esocodes.sand.test | com.esocodes.sand
+Waiting for application to come online: com.esocodes.sand.test | com.esocodes.sand
+Waiting for application to come online: com.esocodes.sand.test | com.esocodes.sand
+Connected to process 8547 on device 'emulator-5554'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+W/ActivityThread: Application com.esocodes.sand is waiting for the debugger on port 8100...
+I/System.out: Sending WAIT chunk
+Waiting for application to come online: com.esocodes.sand.test | com.esocodes.sand
+Connecting to com.esocodes.sand
+Now Launching Native Debug Session
+$ adb shell cat /data/local/tmp/lldb-server | run-as com.esocodes.sand sh -c 'cat > /data/data/com.esocodes.sand/lldb/bin/lldb-server && chmod 700 /data/data/com.esocodes.sand/lldb/bin/lldb-server'
+$ adb shell cat /data/local/tmp/start_lldb_server.sh | run-as com.esocodes.sand sh -c 'cat > /data/data/com.esocodes.sand/lldb/bin/start_lldb_server.sh && chmod 700 /data/data/com.esocodes.sand/lldb/bin/start_lldb_server.sh'
+Starting LLDB server: /data/data/com.esocodes.sand/lldb/bin/start_lldb_server.sh /data/data/com.esocodes.sand/lldb unix-abstract /com.esocodes.sand-0 platform-1622085033131.sock "lldb process:gdb-remote packets"
+Debugger attached to process 8547

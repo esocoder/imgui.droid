@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/J/Desktop/Code/ext/ndk/native-plasma/app/.cxx/cmake/release/armeabi-v7a",
+  "command": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC -o CMakeFiles\\native_app_glue.dir\\C_\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\sources\\android\\native_app_glue\\android_native_app_glue.c.o -c C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\sources\\android\\native_app_glue\\android_native_app_glue.c",
+  "file": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\sources\\android\\native_app_glue\\android_native_app_glue.c"
+},
+{
+  "directory": "C:/Users/J/Desktop/Code/ext/ndk/native-plasma/app/.cxx/cmake/release/armeabi-v7a",
+  "command": "C:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_plasma_EXPORTS -IC:/Users/J/AppData/Local/Android/Sdk/ndk/23.0.7123448/sources/android/native_app_glue -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC -o CMakeFiles\\native-plasma.dir\\plasma.c.o -c C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\src\\main\\cpp\\plasma.c",
+  "file": "C:\\Users\\J\\Desktop\\Code\\ext\\ndk\\native-plasma\\app\\src\\main\\cpp\\plasma.c"
+}
+]

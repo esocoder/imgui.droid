@@ -1,0 +1,79 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 19 min SDK version: arm64-v8a",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "rebuilding JSON C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\arm64-v8a\\android_gradle_build.json due to:",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "- a dependent build file changed",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "  - C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "keeping json folder \u0027C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\arm64-v8a\u0027 but regenerating project",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : C:\\Program Files\\CMake\\bin\\cmake.exe\narguments : \n-HC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\n-DCMAKE_FIND_ROOT_PATH\u003dC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\prefab\\arm64-v8a\\prefab\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\build\\cmake\\android.toolchain.cmake\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_NDK\u003dC:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\n-DANDROID_PLATFORM\u003dandroid-19\n-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\n-DCMAKE_ANDROID_NDK\u003dC:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d19\n-BC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\arm64-v8a\n-GNinja\njvmArgs : \n\n",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Executable : C:\\Program Files\\CMake\\bin\\cmake.exe\narguments : \n-HC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\n-DCMAKE_FIND_ROOT_PATH\u003dC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\prefab\\arm64-v8a\\prefab\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\\build\\cmake\\android.toolchain.cmake\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_NDK\u003dC:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\n-DANDROID_PLATFORM\u003dandroid-19\n-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\n-DCMAKE_ANDROID_NDK\u003dC:\\Users\\J\\AppData\\Local\\Android\\Sdk\\ndk\\23.0.7123448\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d19\n-BC:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\arm64-v8a\n-GNinja\njvmArgs : \n\n",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "deleted unexpected build output C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libnative-plasma.so in incremental regenerate",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\.cxx\\cmake\\debug\\arm64-v8a\\build_command.txt",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed without problems",
+    "file": "C:\\Users\\J\\Desktop\\Code\\sand\\imgui\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  }
+]
