@@ -1,13 +1,13 @@
 Imgui.droid
 =============
 
-Imgui.droid is a bare-bones, 2021.06 implementation of Android native-only C++ bare-bones dear imgui implementation
+Imgui.droid is a bare-bones, 2021.06 implementation of Android native-only C++ bare-bones dear imgui implementation.
 
-Derived from Google's NDK [Native Activity](http://developer.android.com/reference/android/app/NativeActivity.html) example.
+Derived from Google's NDK [Native Activity](http://developer.android.com/reference/android/app/NativeActivity.html) example (Native Plasma).
 
-Then [Dear imgui](https://github.com/ocornut/imgui) was added.
+Then [Dear imgui](https://github.com/ocornut/imgui) was added. The imgui demo executes upon add startup and will push 60 fps even on emulators.
 
-.vscode is only for my personal local development and should be ignored/modified to suit your needs
+.vscode is only for my personal local development and should be ignored/modified to suit your needs.
 
 NOTE: the functions that deal with activating on-screen keyboard input (originally in Kotlin) has been commented out and disabled in lieu of a better solution.
 
