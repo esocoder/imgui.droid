@@ -1,7 +1,7 @@
 Imgui.droid
 =============
 
-Imgui.droid is a bare-bones, 2021.06 implementation of Android native-only C++ bare-bones dear imgui implementation.
+Imgui.droid is a bare-bones, 2021.06 implementation of Android native-only C++ dear imgui implementation.
 
 Derived from Google's NDK [Native Activity](http://developer.android.com/reference/android/app/NativeActivity.html) example (Native Plasma).
 
